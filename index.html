@@ -51,23 +51,52 @@
 </head>
 <body>
     <!-- navbar -->
-     <div class="navbar bg-base-100">
-  <div class="flex-1 lg:gap-6 gap-3">
-    <a class="text-blue-700 text-xl"><i class="fa-brands fa-facebook"></i></a>
-    <a class="text-red-700 text-xl"><i class="fa-brands fa-youtube"></i></a>
-    <a class="text-red-700 text-xl"><i class="fa-brands fa-instagram"></i></a>
+    <div class="navbar bg-base-100">
+      <div class="navbar-start lg:block hidden">
+        <a class="text-blue-700 text-xl cursor-pointer mr-2"><i class="fa-brands fa-facebook"></i></a>
+    <a class="text-red-700 text-xl mr-2"><i class="fa-brands fa-youtube"></i></a>
+    <a class="text-red-700 text-xl mr-2"><i class="fa-brands fa-instagram"></i></a>
     <a class="text-xl"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+  <div class="navbar-start lg:hidden block">
+    
+    <div class="dropdown">
+      
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h7" />
+        </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+       <li><a class="font-ALbert-Sans font-bold text-[18px] text-[#000000]">Branches</a></li>
+      <li><a class="font-ALbert-Sans font-bold text-[18px] text-[#000000]">Login</a></li>
+      <li><a class="font-ALbert-Sans font-bold text-[18px] text-[#000000]">Signup</a></li>
+      <li><a class="font-ALbert-Sans font-bold text-[18px] text-[#000000]">Blog</a></li>
+      <li><a class="font-ALbert-Sans font-bold text-[18px] text-[#000000]">Pages</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="flex-1">
+  <div class="navbar-center">
     <a class="" href="index.html">
-        <img class="w-24" src="img/logo.webp" alt="logo">
+      <img class="w-24" src="img/logo (1).webp" alt="logo (1)">
     </a>
   </div>
-  <div class="flex items-center">
-     <button class="btn btn-ghost btn-circle">
+  <div class="navbar-end">
+    <button class="btn btn-ghost btn-circle">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6"
+        class="h-5 w-5"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor">
@@ -82,15 +111,12 @@
         <ul class="menu  menu-horizontal px-1 ">
       <li><a class="font-ALbert-Sans font-bold text-[18px] text-[#000000]">Branches</a></li>
       <li><a class="font-ALbert-Sans font-bold text-[18px] text-[#000000]">Login</a></li>
-      <li><a class="font-ALbert-Sans font-bold text-[18px] text-[#000000]">Signup</a></li>
-      <li><a class="font-ALbert-Sans font-bold text-[18px] text-[#000000]">Blog</a></li>
-      <li><a class="font-ALbert-Sans font-bold text-[18px] text-[#000000]">Pages</a></li>
+      <li class="xl:block lg:block  hidden"><a class="font-ALbert-Sans font-bold text-[18px] text-[#000000]">Signup</a></li>
+      <li class="xl:block  hidden"><a class="font-ALbert-Sans font-bold text-[18px] text-[#000000]">Blog</a></li>
+      <li class="lg:block hidden"><a class="font-ALbert-Sans font-bold text-[18px] text-[#000000]">Pages</a></li>
     </ul>
-    </div>
   </div>
 </div>
     <!-- navbar -->
-</body>
-</html>
 </body>
 </html>
