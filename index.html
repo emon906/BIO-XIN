@@ -24,18 +24,6 @@
       <script src="https://kit.fontawesome.com/2489740162.js" crossorigin="anonymous"></script>
      <!-- font awosome -->
       <style>
-        .header-bg{
-          background: url(./img/Complete\ Asthetic\ Proof.jpg);
-          background-size: 490px;
-          background-position: center;
-          background-repeat: no-repeat;
-          height: 100vh; 
-        }
-        @media (min-width: 768px) {
-      .header-bg {
-        background-size: cover;
-      }
-    }
         .font-Playfair-Display{
             font-family: "Playfair Display", serif;
         }
@@ -46,7 +34,7 @@
 </head>
 <body>
   <!-- header -->
-   <header class="pb-[550px] header-bg" >
+   <header class="md:pb-[550px] pb-[190px]" style="background-image: url(./img/Complete\ Asthetic\ Proof.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
      <!-- navbar -->
     <div class="navbar md:container md:mx-auto">
       <div class="navbar-start lg:block hidden ml-6">
@@ -128,6 +116,8 @@
 </div>
 </div>
 <!-- # -->
+ 
+
 <div class="lg:block hidden  md:container md:mx-auto ">
 <div class="navbar">
   <div class="navbar-start ">
@@ -634,7 +624,8 @@
          <!-- free delivery -->
         <!-- currnet offer -->
          <!-- featured products -->
-          <div class="text-center mb-20">
+          <div class="flex justify-center">
+            <div class="text-center mb-20 gap-5 grid md:grid-cols-5 grid-cols-1">
             <button class="text-gray-500 mr-6 hover:bg-[#FF3D71] hover:text-white transition text-base font-bold border border-2px border-[#808AB9] font-ALbert-Sans px-3 rounded-lg">
             Freckles
           </button>
@@ -647,15 +638,16 @@
           <button class="text-gray-500 mr-6 hover:bg-[#FF3D71] hover:text-white transition text-base font-bold border border-2px border-[#808AB9] font-ALbert-Sans px-3 rounded-lg">
             Moisturizer
           </button>
-          <button class="text-gray-500 hover:bg-[#FF3D71] hover:text-white transition text-base font-bold border border-2px border-[#808AB9] font-ALbert-Sans px-3 rounded-lg">
+          <button class="text-gray-500 hover:bg-[#FF3D71] hover:text-white transition text-base font-bold border border-2px border-[#808AB9] font-ALbert-Sans md:px-3 px-2 rounded-lg">
             Pigmentation
           </button>
           </div>
+          </div>
          <!-- featured products -->
           <!-- flex -->
-           <div class="flex justify-center">
+           <div class="flex justify-center mb-16">
             <!-- grid -->
-             <div class="grid grid-cols-4 gap-6">
+             <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
                <!-- card -->
              <div class="p-4 hover:shadow-2xl bg-[#FAFAFA] rounded-3xl">
               <img class="rounded-3xl w-[235px]" src="img/Novaclear Whiten.webp" alt="Novaclear Whiten.webp">
@@ -879,6 +871,36 @@
             <!-- grid -->
            </div>
           <!-- flex -->
+            <div class="flex justify-center py-6">
+          <button class="border text-[20px] bg-[#FAFAFA] rounded-full  hover:text-orange-500 hover:border-orange-400 px-6 py-2">See All</button>
+         </div>
+         <!-- media covarage -->
+             <h2 class="text-center text-4xl font-semibold font-Playfair-Display py-16">Media Coverage</h2>
+         <!-- media covarage -->
+          <!-- owners name -->
+          <div class="flex justify-center gap-12 mb-16">
+            <!-- flex -->
+              <div class="text-center">
+             <div class="flex justify-center">
+              <img src="img/Pertner-logo-02.webp" alt="Pertner-logo-02">
+            </div>
+            <p class="text-[#807777] text-lg font-light mt-4">Bio-Xin Cosmeceuticals: Redefining <br> Skincare Excellence with Visionary <br> Leadership</p>
+           </div>
+           <div class="text-center">
+             <div class="flex justify-center">
+              <img src="img/Pertner-logo-03.webp" alt="Pertner-logo-03">
+            </div>
+            <p class="text-[#807777] text-lg font-light mt-4">Meet Muhammad Zahidul Hoque, A <br> Man Behind Beauty and Innovation <br> in Bangladesh</p>
+           </div>
+           <div class="text-center">
+            <div class="flex justify-center">
+              <img src="img/Pertner-logo-04.webp" alt="Pertner-logo-04">
+            </div>
+            <p class="text-[#807777] text-lg font-light mt-4">Bio-Xin Cosmeceuticals: Brand of <br> The Year 2023</p>
+           </div>
+            <!-- flex -->
+          </div>
+          <!-- owners name -->
   </section>
  <!-- section -->
 </body>
